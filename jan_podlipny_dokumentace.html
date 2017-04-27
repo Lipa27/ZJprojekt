@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Odkaz na github: https://github.com/Lipa27/ZJprojekt -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="Author" content="Jan Podlipný">
+        <title>Dokumentace - Nastavení hry</title>
+    </head>
+    <body>
+        <h1 align="center"><u>Dokumentace k projektu z předmětu Značkovací jazyky</u></h1>
+        <nav>
+            <h2><u>Obsah:</u></h2>
+            <ul>
+                <li><a href="#uvod">Úvod</a></li>
+                <li><a href="#metodika">Metodika</a></li>
+                <li><a href="#popis">Popis elementů a atributů</a></li>
+                <li><a href="#transfor">Popis transformace</a></li>
+                <li><a href="#zaver">Závěr</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="uvod">
+                <article>
+                <header>
+                    <h2><u>Úvod</u></h2>
+                </header>
+                <p>
+                    Pro vytvoření semestrálního projektu jsem si zvolil téma nastavení
+                    počítačové hry. Při vymýšlení elementů jsem se inspiroval hrou WarThunder,
+                    ze které jsem převzal většinu možností nastavení. Projekt je uložen na 
+                    stránce <a href="https://github.com/Lipa27/ZJprojekt">Github</a>.
+                </p>
+                </article>
+            </section>
+            <section id="metodika">
+                <article>
+                    <header>
+                        <h2><u>Metodika</u></h2>
+                    </header>
+                    <h3><u>Použité webové stránky:</u></h3>
+                    <p>
+                        Většinu informací jsem čerpal na stránkách <a href="https://www.w3schools.com/">W3Schools</a> a 
+                        <a href="https://stackoverflow.com/">Stack Overflow</a>, validaci jsem prováděl na stránkách 
+                        <a href="http://www.freeformatter.com/xml-validator-xsd.html">Freeformatter</a> a 
+                        <a href="https://validator.w3.org/">oficálním validátoru W3</a>.
+                    </p>
+                    <h3><u>Použité programy:</u></h3>
+                    <p>
+                        Při tvorbě projektu jsem použil programy <a href="https://netbeans.org/">NetBeans</a>, 
+                        <a href="https://www.microsoft.com/en-us/download/details.aspx?id=7973">XML Notepad</a>
+                        a <a href="https://www.google.com/chrome/">Google Chrome</a>.
+                    </p>
+                </article>
+            </section>
+            <section id="popis">
+                <article>
+                    <header>
+                        <h2><u>Popis elementů a atributů</u></h2>
+                    </header>
+                    <h3><u>Použité elementy:</u></h3>
+                    <table border="1" id="elementy" title="Tabulka elementů">
+                        <tr>
+                            <td><b>Název elementu</b></td>
+                            <td><b>Popis elementu</b></td>
+                            <td><b>Schématické omezení</b></td>
+                        </tr>
+                        <tr>                       
+                            <td>prednastaveni</td>
+                            <td>Obaluje nastavení pro jednotlivé uživatele</td>
+                            <td>Bez omezení</td>
+                        </tr>
+                        <tr>                       
+                            <td>jazyk</td>
+                            <td>Nastavuje v jakém jazyce bude program spuštěn</td>
+                            <td>Czech, English, Russian</td>
+                        </tr>                        
+                        <tr>                       
+                            <td>napoveda</td>
+                            <td>Určuje jestli bude zobrazena nápověda</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>jednotky_vzdalenosti</td>
+                            <td>Určuje ve kterých jednotkách budou zobrazené vzdálenosti</td>
+                            <td>Km , Mil</td>
+                        </tr>
+                        <tr>                       
+                            <td>jednotky_rychlosti</td>
+                            <td>Určuje ve kterých jednotkách bude zobrazena rychlost</td>
+                            <td>Km/h , Mil/h</td>
+                        </tr>
+                        <tr>                       
+                            <td>jednotky_teploty</td>
+                            <td>Určuje ve kterých jednotkách bude zobrazena teplota</td>
+                            <td>C , F</td>
+                        </tr>
+                        <tr>                       
+                            <td>vychozi_pohled</td>
+                            <td>Určuje standardní pohled při začátku hry</td>
+                            <td>venkovni , kabina</td>
+                        </tr>
+                        <tr>                       
+                            <td>grafika</td>
+                            <td>Obaluje možnosti nastavení grafiky</td>
+                            <td>Bez omezení</td>
+                        </tr>
+                        <tr>                       
+                            <td>antistropni_filtr</td>
+                            <td>Určuje jestli bude zapnutý antistropni filtr</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>vyhlazovani_hran</td>
+                            <td>Určuje jestli bude zapnuté vyhlazování hran</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>extra_AA</td>
+                            <td>Určuje jestli bude zapnutý extra anti-aliasing</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>detaily</td>
+                            <td>Obaluje možnosti nastavení detailů</td>
+                            <td>Bez omezení</td>
+                        </tr>
+                        <tr>                       
+                            <td>kvalita_textur</td>
+                            <td>Určuje jak kvalitní se budou zobrazovat textury</td>
+                            <td>nizka , stredni , vysoka</td>
+                        </tr>
+                        <tr>                       
+                            <td>kvalita_stinu</td>
+                            <td>Určuje jak kvalitní se budou zobrazovat stíny</td>
+                            <td>nizka , stredni , vysoka</td>
+                        </tr>
+                        <tr>                       
+                            <td>vykreslovaci_rozliseni</td>
+                            <td>Určuje jak kvalitní bude vykreslovací rozlišení</td>
+                            <td>Stupnice 0-2 po 0.1</td>
+                        </tr>
+                        <tr>                       
+                            <td>kvalita_mraku</td>
+                            <td>Určuje jak kvalitní se budou zobrazovat mraky</td>
+                            <td>Stupnice 0-2 po 0.1</td>
+                        </tr>
+                        <tr>                       
+                            <td>kvalita_terenu</td>
+                            <td>Určuje jak kvalitní se bude zobrazovat terén</td>
+                            <td>Stupnice 0-2 po 0.1</td>
+                        </tr>
+                        <tr>                       
+                            <td>vzdalenost_vykreslovani</td>
+                            <td>Určuje jak daleko se budou vykreslovat detaily</td>
+                            <td>Stupnice 0-2 po 0.1</td>
+                        </tr>
+                        <tr>                       
+                            <td>kvalita_odlesku</td>
+                            <td>Určuje jak kvalitní se budou zobrazovat odlesky</td>
+                            <td>Stupnice 0-2 po 0.1</td>
+                        </tr>
+                        <tr>                       
+                            <td>kvalita_odrazu_vody</td>
+                            <td>Určuje jak kvalitní se bude zobrazovat odraz vody</td>
+                            <td>Stupnice 0-2 po 0.1</td>
+                        </tr>
+                        <tr>                       
+                            <td>kvalita_fyziky</td>
+                            <td>Určuje jak kvalitní se bude zobrazovat fyzika</td>
+                            <td>Stupnice 0-2 po 0.1</td>
+                        </tr>
+                        <tr>                       
+                            <td>deformace_terenu</td>
+                            <td>Určuje jak kvalitní se bude zobrazovat deformace terénu</td>
+                            <td>nizka , stredni , vysoka</td>
+                        </tr>
+                        <tr>                       
+                            <td>kvalita_stop_pasu</td>
+                            <td>Určuje jak kvalitní se budou zobrazovat stopy po pásech</td>
+                            <td>nizka , stredni , vysoka</td>
+                        </tr>
+                        <tr>                       
+                            <td>stiny</td>
+                            <td>Určuje jestli se budou zobrazovat stíny</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>detaily_pobrezi</td>
+                            <td>Určuje jestli se budou zobrazovat detaily pobřeží</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>efekt_vlneni</td>
+                            <td>Určuje jestli se bude zobrazovat efekt vlnění vody</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>detaily_vegetace</td>
+                            <td>Určuje jestli se budou zobrazovat detaily vegetace</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>zvuk</td>
+                            <td>Obaluje nastavení zvuku</td>
+                            <td>Bez omezení</td>
+                        </tr>
+                        <tr>                       
+                            <td>hlasitost</td>
+                            <td>Určuje celkovou hlasitost zvuků</td>
+                            <td>Stupnice 0-10 po 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>hlasitost_efektu</td>
+                            <td>Určuje hlasitost efektů</td>
+                            <td>Stupnice 0-10 po 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>hlasitost_motoru</td>
+                            <td>Určuje hlasitost motorů</td>
+                            <td>Stupnice 0-10 po 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>hlasitost_strelby</td>
+                            <td>Určuje hlasitost střelby</td>
+                            <td>Stupnice 0-10 po 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>hlasitost_komunikace</td>
+                            <td>Určuje hlasitost komunikace</td>
+                            <td>Stupnice 0-10 po 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>zvuky_v_hangaru</td>
+                            <td>Určuje jestli se budou během zobrazení hangáru přehrávat zvuky</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>rozhrani</td>
+                            <td>Obaluje nastaveni rozhraní</td>
+                            <td>Bez omezení</td>
+                        </tr>
+                        <tr>                       
+                            <td>velke_pismo_menu</td>
+                            <td>Určuje jestli se bude menu zobrazovat velkými písmeny</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>rozhrani_s_gamepadem</td>
+                            <td>Určuje jestli se bude zobrazovat rozhraní s gamepadem</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>barva_zamerneho_krize</td>
+                            <td>Určuje v jaké barvě se bude zobrazovat záměrný kříž</td>
+                            <td>bila , cervena , zluta , modra</td>
+                        </tr>
+                        <tr>                       
+                            <td>velikost_zamerneho_krize</td>
+                            <td>Určuje jak velký se bude zobrazovat záměrný kříž</td>
+                            <td>Stupnice 0-2 po 0.1</td>
+                        </tr>
+                        <tr>                       
+                            <td>filtr_konverzace</td>
+                            <td>Určuje jestli se budou z konverazce filtrovat nevyžádané zprávy</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>velikost_ukaz_poskozeni</td>
+                            <td>Určuje jak velký se bude zobrazovat ukazatel poškození vozidla</td>
+                            <td>Stupnice 0-2 po 0.1</td>
+                        </tr>
+                        <tr>                       
+                            <td>velikost_takticke_mapy</td>
+                            <td>Určuje jak velká se bude zobrazovat taktická mapa</td>
+                            <td>Stupnice 0-2 po 0.1</td>
+                        </tr>
+                        <tr>                       
+                            <td>titulky</td>
+                            <td>Určuje jestli se budou zobrazovat titulky</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>predsazeni</td>
+                            <td>Určuje jestli se bude zobrazovat míra předsazení při střelbě</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>ukazatel_nepřátel</td>
+                            <td>Určuje jestli se bude zobrazovat ukazatel nad nepřáteli při jejich objevení (jméno a stroj)</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>                       
+                            <td>zobrazeni_poskozeni</td>
+                            <td>Určuje jestli se bude zobrazovat míra poškození vlastního stroje</td>
+                            <td>0 , 1</td>
+                        </tr>
+                    </table>
+                    <h3><u>Použité atributy:</u></h3>
+                    <table border="1" id="atributy" title="Tabulka atributů">
+                        <tr>
+                            <td><b>Název atributu</b></td>
+                            <td><b>Popis atributu</b></td>
+                            <td><b>Schématické omezení</b></td>
+                        </tr>
+                        <tr>
+                            <td>id</td>
+                            <td>Určuje číslo setu přednastavení</td>
+                            <td>id*číslo*</td>
+                        </tr>
+                        <tr>
+                            <td>verze</td>
+                            <td>Určuje verzy hry, povoleny jsou pouze aktuální verze</td>
+                            <td>1.67.2.115 , 1.67.1.75</td>
+                        </tr>
+                        <tr>
+                            <td>uzivatelske_jmeno</td>
+                            <td>Určuje jméno uživatele, kterému patří set přednastavení</td>
+                            <td>Malá velká písmena a-z a čísla 0-9, max 20 znaků</td>
+                        </tr>
+                        <tr>
+                            <td>autolog</td>
+                            <td>Určuje jestli je zapnuté automatické přihlášení</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>
+                            <td>rozliseni</td>
+                            <td>Určuje použité rozlišení</td>
+                            <td>800x600 , 1024x768 , 1600x900 , 1920x1080</td>
+                        </tr>
+                        <tr>
+                            <td>mod</td>
+                            <td>Určuje použitý mód zobrazení</td>
+                            <td>Fullscreen , Okno</td>
+                        </tr>
+                        <tr>
+                            <td>kvalita_det</td>
+                            <td>Určuje zvolenou kvalitu detailů</td>
+                            <td>nizka , stredni , vysoka</td>
+                        </tr>
+                        <tr>
+                            <td>zapnuto</td>
+                            <td>Určuje jestli je zapnutý zvuk</td>
+                            <td>0 , 1</td>
+                        </tr>
+                        <tr>
+                            <td>kvalita_zvuk</td>
+                            <td>Určuje zvolenou kvalitu zvuku</td>
+                            <td>nizka , stredni , vysoka</td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+            <section id="transfor">
+                <article>
+                    <header>
+                        <h2><u>Popis transformace JSON</u></h2>
+                    </header>
+                    <p>Transformace pomocí cyklu for-each vybere, a 
+                        pomocí JSON odešle informace o nastavení 
+                        detailů všech uživatelů, kteří mají nastavenou kvalitu 
+                        odlesků vyšší nebo rovno jedné, všechny informace seřadí 
+                        podle míry nastavení, a obsahuje test na zjištění zda 
+                        údaj byl poslední, a případné doplnění čárky pro 
+                        správnou syntaxi.
+                    </p>
+                    <header>
+                        <h2><u>Popis transformace HTML</u></h2>
+                    </header>
+                    <p>Transformace pomocí cyklu for-each vybere nastavení uživatele Tiger88, a 
+                        do HTML vloží jeho jméno, použitou verzi hry a
+                        tabulku informací o jeho nastavení zvuků.
+                    </p>
+                </article>
+            </section>
+            <section id="zaver">
+                <article>
+                    <header>
+                        <h2><u>Závěr</u></h2>
+                    </header>
+                    <p>Během studia toho předmětu jsem si poprvé v životě vyzkoušel práci
+                    s XML a získané znalosti jsem následně využil při tvorbě tohoto projektu.
+                    S HTML jsem již v minulosti pracoal, takže tato část práce pro mě nebyla 
+                    náročná. Pokud bych měl více času, dále bych u projektu více rozpracoval a 
+                    vytvořil složitější schématická omezení. Se stránkou Github jsem se poprvé 
+                    seznámil až během výuky a rychle jsme se s ním naučil pracovat, zřejmě ho 
+                    vužiji i v dalších projektech.
+                    </p>
+                </article>
+            </section>
+        </main>
+            <footer>
+                    <p>Autor: <b>Jan Podlipný, xpodj004</b> | Česká Zemědělská univerzita Praha, dne 26.4.2017</p>
+            </footer>
+    </body>
+</html>

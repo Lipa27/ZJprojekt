@@ -1,0 +1,47 @@
+
+		[ 
+		
+			{
+			"Uzivatelske jmeno": "Lotr666",
+                        "Nastaveni kvality detailu:": "vysoka",
+                        "Kvalita textur": "stredni",
+                        "Vykreslovaci rozliseni": "1",
+                        "Kvalita mraku": "2",
+                        "Kvalita terenu": "2",
+                        "Vykreslovaci vzdalenost": "1",
+			"Kvalita odlesku": "1.3",
+                        "Kvalita odrazu vody": "1",
+                        "Kvalita fyziky": "2",
+                        "Deformace terenu": "stredni",
+                        "Kvalita stop pasu": "vysoka",
+			},
+			{
+			"Uzivatelske jmeno": "1pilot1",
+                        "Nastaveni kvality detailu:": "vysoka",
+                        "Kvalita textur": "vysoka",
+                        "Vykreslovaci rozliseni": "1",
+                        "Kvalita mraku": "1",
+                        "Kvalita terenu": "1",
+                        "Vykreslovaci vzdalenost": "1.5",
+			"Kvalita odlesku": "1.8",
+                        "Kvalita odrazu vody": "1",
+                        "Kvalita fyziky": "1.5",
+                        "Deformace terenu": "stredni",
+                        "Kvalita stop pasu": "stredni",
+			},
+			{
+			"Uzivatelske jmeno": "Lipa27",
+                        "Nastaveni kvality detailu:": "vysoka",
+                        "Kvalita textur": "vysoka",
+                        "Vykreslovaci rozliseni": "1",
+                        "Kvalita mraku": "2",
+                        "Kvalita terenu": "2",
+                        "Vykreslovaci vzdalenost": "2",
+			"Kvalita odlesku": "2",
+                        "Kvalita odrazu vody": "2",
+                        "Kvalita fyziky": "2",
+                        "Deformace terenu": "vysoka",
+                        "Kvalita stop pasu": "vysoka",
+			}
+		] 
+	

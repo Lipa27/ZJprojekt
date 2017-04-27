@@ -1,4 +1,4 @@
-<!-- Odkaz na github: -->
+<!-- Odkaz na github: https://github.com/Lipa27/ZJprojekt -->
 
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="nastaveni">

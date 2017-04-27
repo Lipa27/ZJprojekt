@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?> 
   <?xml-stylesheet type="text/xsl" href="jan_podlipny.xsl"?>
-  <!-- Odkaz na github: https://github.com/ --> 
+  <!-- Odkaz na github: https://github.com/Lipa27/ZJprojekt --> 
 
-<nastaveni xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="C:\Users\Podli\Desktop\jan_podlipny.xsd">
+<nastaveni xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="jan_podlipny.xsd">
   <prednastaveni id="set1">
     <hra verze="1.67.2.115" uzivatelske_jmeno="Tanker1" autolog="1">
       <jazyk>Czech</jazyk>

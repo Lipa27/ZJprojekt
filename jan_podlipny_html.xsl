@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Odkaz na github: -->
+<!-- Odkaz na github: https://github.com/Lipa27/ZJprojekt -->
 
 <!-- Vypsani nastaveni zvuku uzivatele Tiger88 a transformace do html -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">

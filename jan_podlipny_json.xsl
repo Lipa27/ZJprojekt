@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Odkaz na github: -->
+<!-- Odkaz na github: https://github.com/Lipa27/ZJprojekt -->
 
 <!-- Vypasani nastaveni detailu pro uzivatele s nastavenim kvality odlesku vetsi nez 1 a transformace do JSON -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
