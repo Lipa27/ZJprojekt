@@ -1,0 +1,191 @@
+<!-- Odkaz na github: -->
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="nastaveni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="prednastaveni" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="hra">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="jaz" name="jazyk"/>
+                    <xs:element type="vypzap" name="napoveda"/>
+                    <xs:element type="jednot1" name="jednotky_vzdalenosti"/>
+                    <xs:element type="jednot2" name="jednotky_rychlosti"/>
+                    <xs:element type="jednot3" name="jednotky_teploty"/>
+                    <xs:element type="pohled" name="vychozi_pohled"/>
+                  </xs:sequence>
+                  <xs:attribute type="verz" name="verze" use="required"/>
+                  <xs:attribute type="chars" name="uzivatelske_jmeno" use="required"/>
+                  <xs:attribute type="vypzap" name="autolog" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="grafika">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="vypzap" name="antistropni_filtr"/>
+                    <xs:element type="vypzap" name="vyhlazovani_hran"/>
+                    <xs:element type="vypzap" name="extra_AA"/>
+                    <xs:element name="detaily">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="kvalitky" name="kvalita_textur"/>
+                          <xs:element type="kvalitky" name="kvalita_stinu"/>
+                          <xs:element type="stupnice" name="vykreslovaci_rozliseni"/>
+                          <xs:element type="stupnice" name="kvalita_mraku"/>
+                          <xs:element type="stupnice" name="kvalita_terenu"/>
+                          <xs:element type="stupnice" name="vzdalenost_vykreslovani"/>
+                          <xs:element type="stupnice" name="kvalita_odlesku"/>
+                          <xs:element type="stupnice" name="kvalita_odrazu_vody"/>
+                          <xs:element type="stupnice" name="kvalita_fyziky"/>
+                          <xs:element type="kvalitky" name="deformace_terenu"/>
+                          <xs:element type="kvalitky" name="kvalita_stop_pasu"/>
+                        </xs:sequence>
+                        <xs:attribute type="kvalitky" name="kvalita_det" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="vypzap" name="stiny"/>
+                    <xs:element type="vypzap" name="detaily_pobrezi"/>
+                    <xs:element type="vypzap" name="efekt_vlneni"/>
+                    <xs:element type="vypzap" name="detaily_vegetace"/>
+                  </xs:sequence>
+                  <xs:attribute type="rozlis" name="rozliseni" use="required"/>
+                  <xs:attribute type="modik" name="mod" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="zvuk">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="stupniceh" name="hlasitost"/>
+                    <xs:element type="stupniceh" name="hlasitost_efektu"/>
+                    <xs:element type="stupniceh" name="hlasitost_motoru"/>
+                    <xs:element type="stupniceh" name="hlasitost_strelby"/>
+                    <xs:element type="stupniceh" name="hlasitost_komunikace"/>
+                    <xs:element type="vypzap" name="zvuky_v_hangaru"/>
+                  </xs:sequence>
+                  <xs:attribute type="vypzap" name="zapnuto" use="required"/>
+                  <xs:attribute type="kvalitky" name="kvalita_zvuk" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="rozhrani">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="vypzap" name="velke_pismo_menu"/>
+                    <xs:element type="vypzap" name="rozhrani_s_gamepadem"/>
+                    <xs:element type="barva" name="barva_zamerneho_krize"/>
+                    <xs:element type="stupnice" name="velikost_zamerneho_krize"/>
+                    <xs:element type="vypzap" name="filtr_konverzace"/>
+                    <xs:element type="stupnice" name="velikost_ukaz_poskozeni"/>
+                    <xs:element type="stupnice" name="velikost_takticke_mapy"/>
+                    <xs:element type="vypzap" name="titulky"/>
+                    <xs:element type="vypzap" name="predsazeni"/>
+                    <xs:element type="vypzap" name="ukazatele_nepratel"/>
+                    <xs:element type="vypzap" name="zobrazeni_poskozeni"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="idicko" name="id" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- Nastevni omezeni -->
+  <xs:simpleType name="vypzap"> <!-- Omezeni zapnuto/vypnuto -->
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="1"/>
+    </xs:restriction>
+  </xs:simpleType> 
+  <xs:simpleType name="jaz"> <!-- Omezeni jazyka -->
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Czech"/>
+      <xs:enumeration value="English"/>
+      <xs:enumeration value="Russian"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="chars"> <!-- Omezeni pismen -->
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-zA-Z0-9]{0,20}"/>  
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="jednot1"> <!-- Omezeni delky -->
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Km"/>
+      <xs:enumeration value="Mil"/>
+    </xs:restriction>
+  </xs:simpleType>
+    <xs:simpleType name="jednot2"> <!-- Omezeni rychlosti -->
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Km/h"/>
+      <xs:enumeration value="Mil/h"/>
+    </xs:restriction>
+    </xs:simpleType>
+  <xs:simpleType name="jednot3"> <!-- Omezeni teploty -->
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="C"/>
+      <xs:enumeration value="F"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="pohled"> <!-- Omezeni pohledu -->
+    <xs:restriction base="xs:string">
+       <xs:enumeration value="venkovni"/>
+       <xs:enumeration value="kabina"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="verz"> <!-- Omezeni verze -->
+    <xs:restriction base="xs:string">
+      <xs:pattern value="1.67.2.115"/>
+      <xs:pattern value="1.67.1.75"/>
+    </xs:restriction>
+  </xs:simpleType> 
+  <xs:simpleType name="kvalitky"> <!-- Omezeni kvality detailu -->
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="nizka"/>
+      <xs:enumeration value="stredni"/>
+      <xs:enumeration value="vysoka"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="stupnice"> <!-- Omezeni stupnice -->
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="stupniceh"> <!-- Omezeni stupnice hlasitosti -->
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="10"/>
+    </xs:restriction>
+  </xs:simpleType> 
+  <xs:simpleType name="rozlis"> <!-- Omezeni rozliseni -->
+    <xs:restriction base="xs:string">
+    	<xs:enumeration value="800x600"/>
+        <xs:enumeration value="1024x768"/>
+        <xs:enumeration value="1600x900"/>
+        <xs:enumeration value="1920x1080"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="modik"> <!-- Omezeni modu zobrazeni -->
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Fullscreen"/>
+      <xs:enumeration value="Okno"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="barva"> <!-- Omezeni barvy zamerovace -->
+    <xs:restriction base="xs:string">
+    	<xs:enumeration value="bila"/>
+        <xs:enumeration value="cervena"/>
+        <xs:enumeration value="zluta"/>
+        <xs:enumeration value="modra"/>
+    </xs:restriction>
+  </xs:simpleType> 
+  <xs:simpleType name="idicko"> <!-- Omezeni id -->
+    <xs:restriction base="xs:string">
+      <xs:pattern value="set[\d]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

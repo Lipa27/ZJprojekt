@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+  <?xml-stylesheet type="text/xsl" href="jan_podlipny.xsl"?>
+  <!-- Odkaz na github: https://github.com/ --> 
+
+<nastaveni xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="C:\Users\Podli\Desktop\jan_podlipny.xsd">
+  <prednastaveni id="set1">
+    <hra verze="1.67.2.115" uzivatelske_jmeno="Tanker1" autolog="1">
+      <jazyk>Czech</jazyk>
+      <napoveda>0</napoveda>
+      <jednotky_vzdalenosti>Km</jednotky_vzdalenosti>
+      <jednotky_rychlosti>Km/h</jednotky_rychlosti>
+      <jednotky_teploty>C</jednotky_teploty>
+      <vychozi_pohled>venkovni</vychozi_pohled>
+    </hra>
+    <grafika rozliseni="1024x768" mod="Fullscreen">
+        <antistropni_filtr>1</antistropni_filtr>
+        <vyhlazovani_hran>1</vyhlazovani_hran>
+        <extra_AA>0</extra_AA>
+      <detaily kvalita_det="stredni">
+        <kvalita_textur>stredni</kvalita_textur>
+        <kvalita_stinu>vysoka</kvalita_stinu>
+        <vykreslovaci_rozliseni>1</vykreslovaci_rozliseni>
+        <kvalita_mraku>1</kvalita_mraku>
+        <kvalita_terenu>1</kvalita_terenu>
+        <vzdalenost_vykreslovani>1.5</vzdalenost_vykreslovani>
+        <kvalita_odlesku>0.9</kvalita_odlesku>
+        <kvalita_odrazu_vody>1</kvalita_odrazu_vody>
+        <kvalita_fyziky>2</kvalita_fyziky>
+        <deformace_terenu>vysoka</deformace_terenu>
+        <kvalita_stop_pasu>stredni</kvalita_stop_pasu>
+      </detaily>
+      <stiny>1</stiny>
+      <detaily_pobrezi>1</detaily_pobrezi>
+      <efekt_vlneni>1</efekt_vlneni>
+      <detaily_vegetace>0</detaily_vegetace>
+    </grafika>
+    <zvuk zapnuto="1" kvalita_zvuk="vysoka">
+      <hlasitost>9</hlasitost>
+      <hlasitost_efektu>10</hlasitost_efektu>
+      <hlasitost_motoru>10</hlasitost_motoru>
+      <hlasitost_strelby>10</hlasitost_strelby>
+      <hlasitost_komunikace>9</hlasitost_komunikace>
+      <zvuky_v_hangaru>1</zvuky_v_hangaru>
+    </zvuk>
+    <rozhrani>
+      <velke_pismo_menu>0</velke_pismo_menu>
+      <rozhrani_s_gamepadem>0</rozhrani_s_gamepadem>  
+      <barva_zamerneho_krize>zluta</barva_zamerneho_krize>
+      <velikost_zamerneho_krize>0.9</velikost_zamerneho_krize>
+      <filtr_konverzace>1</filtr_konverzace>
+      <velikost_ukaz_poskozeni>0.6</velikost_ukaz_poskozeni>
+      <velikost_takticke_mapy>0.5</velikost_takticke_mapy>
+      <titulky>0</titulky>
+      <predsazeni>1</predsazeni>
+      <ukazatele_nepratel>1</ukazatele_nepratel>
+      <zobrazeni_poskozeni>1</zobrazeni_poskozeni>
+    </rozhrani>
+  </prednastaveni>
+  <prednastaveni id="set2">
+    <hra verze="1.67.2.115" uzivatelske_jmeno="Lipa27" autolog="1">
+      <jazyk>Czech</jazyk>
+      <napoveda>0</napoveda>
+      <jednotky_vzdalenosti>Km</jednotky_vzdalenosti>
+      <jednotky_rychlosti>Km/h</jednotky_rychlosti>
+      <jednotky_teploty>C</jednotky_teploty>
+      <vychozi_pohled>venkovni</vychozi_pohled>
+    </hra>
+    <grafika rozliseni="1920x1080" mod="Fullscreen">
+        <antistropni_filtr>1</antistropni_filtr>
+        <vyhlazovani_hran>1</vyhlazovani_hran>
+        <extra_AA>1</extra_AA>
+      <detaily kvalita_det="vysoka">
+        <kvalita_textur>vysoka</kvalita_textur>
+        <kvalita_stinu>vysoka</kvalita_stinu>
+        <vykreslovaci_rozliseni>1</vykreslovaci_rozliseni>
+        <kvalita_mraku>2</kvalita_mraku>
+        <kvalita_terenu>2</kvalita_terenu>
+        <vzdalenost_vykreslovani>2</vzdalenost_vykreslovani>
+        <kvalita_odlesku>2</kvalita_odlesku>
+        <kvalita_odrazu_vody>2</kvalita_odrazu_vody>
+        <kvalita_fyziky>2</kvalita_fyziky>
+        <deformace_terenu>vysoka</deformace_terenu>
+        <kvalita_stop_pasu>vysoka</kvalita_stop_pasu>
+      </detaily>
+      <stiny>1</stiny>
+      <detaily_pobrezi>1</detaily_pobrezi>
+      <efekt_vlneni>1</efekt_vlneni>
+      <detaily_vegetace>1</detaily_vegetace>
+    </grafika>
+    <zvuk zapnuto="1" kvalita_zvuk="vysoka">
+      <hlasitost>10</hlasitost>
+      <hlasitost_efektu>10</hlasitost_efektu>
+      <hlasitost_motoru>10</hlasitost_motoru>
+      <hlasitost_strelby>10</hlasitost_strelby>
+      <hlasitost_komunikace>9</hlasitost_komunikace>
+      <zvuky_v_hangaru>1</zvuky_v_hangaru>
+    </zvuk>
+    <rozhrani>
+      <velke_pismo_menu>0</velke_pismo_menu>
+      <rozhrani_s_gamepadem>0</rozhrani_s_gamepadem>  
+      <barva_zamerneho_krize>bila</barva_zamerneho_krize>
+      <velikost_zamerneho_krize>1</velikost_zamerneho_krize>
+      <filtr_konverzace>1</filtr_konverzace>
+      <velikost_ukaz_poskozeni>0.5</velikost_ukaz_poskozeni>
+      <velikost_takticke_mapy>0.7</velikost_takticke_mapy>
+      <titulky>1</titulky>
+      <predsazeni>1</predsazeni>
+      <ukazatele_nepratel>1</ukazatele_nepratel>
+      <zobrazeni_poskozeni>1</zobrazeni_poskozeni>
+    </rozhrani>
+  </prednastaveni>
+  <prednastaveni id="set3">
+    <hra verze="1.67.2.115" uzivatelske_jmeno="Tiger88" autolog="1">
+      <jazyk>Russian</jazyk>
+      <napoveda>0</napoveda>
+      <jednotky_vzdalenosti>Km</jednotky_vzdalenosti>
+      <jednotky_rychlosti>Km/h</jednotky_rychlosti>
+      <jednotky_teploty>C</jednotky_teploty>
+      <vychozi_pohled>venkovni</vychozi_pohled>
+    </hra>
+    <grafika rozliseni="800x600" mod="Fullscreen">
+        <antistropni_filtr>0</antistropni_filtr>
+        <vyhlazovani_hran>0</vyhlazovani_hran>
+        <extra_AA>0</extra_AA>
+      <detaily kvalita_det="nizka">
+        <kvalita_textur>nizka</kvalita_textur>
+        <kvalita_stinu>nizka</kvalita_stinu>
+        <vykreslovaci_rozliseni>1</vykreslovaci_rozliseni>
+        <kvalita_mraku>0.5</kvalita_mraku>
+        <kvalita_terenu>0.5</kvalita_terenu>
+        <vzdalenost_vykreslovani>0.3</vzdalenost_vykreslovani>
+        <kvalita_odlesku>0.5</kvalita_odlesku>
+        <kvalita_odrazu_vody>0</kvalita_odrazu_vody>
+        <kvalita_fyziky>1</kvalita_fyziky>
+        <deformace_terenu>stredni</deformace_terenu>
+        <kvalita_stop_pasu>nizka</kvalita_stop_pasu>
+      </detaily>
+      <stiny>0</stiny>
+      <detaily_pobrezi>1</detaily_pobrezi>
+      <efekt_vlneni>0</efekt_vlneni>
+      <detaily_vegetace>0</detaily_vegetace>
+    </grafika>
+    <zvuk zapnuto="1" kvalita_zvuk="stredni">
+      <hlasitost>8</hlasitost>
+      <hlasitost_efektu>9</hlasitost_efektu>
+      <hlasitost_motoru>10</hlasitost_motoru>
+      <hlasitost_strelby>10</hlasitost_strelby>
+      <hlasitost_komunikace>10</hlasitost_komunikace>
+      <zvuky_v_hangaru>1</zvuky_v_hangaru>
+    </zvuk>
+    <rozhrani>
+      <velke_pismo_menu>1</velke_pismo_menu>
+      <rozhrani_s_gamepadem>0</rozhrani_s_gamepadem>  
+      <barva_zamerneho_krize>bila</barva_zamerneho_krize>
+      <velikost_zamerneho_krize>0.5</velikost_zamerneho_krize>
+      <filtr_konverzace>1</filtr_konverzace>
+      <velikost_ukaz_poskozeni>0.5</velikost_ukaz_poskozeni>
+      <velikost_takticke_mapy>0.5</velikost_takticke_mapy>
+      <titulky>1</titulky>
+      <predsazeni>1</predsazeni>
+      <ukazatele_nepratel>1</ukazatele_nepratel>
+      <zobrazeni_poskozeni>1</zobrazeni_poskozeni>
+    </rozhrani>
+  </prednastaveni>
+  <prednastaveni id="set4">
+    <hra verze="1.67.2.115" uzivatelske_jmeno="1pilot1" autolog="1">
+      <jazyk>English</jazyk>
+      <napoveda>0</napoveda>
+      <jednotky_vzdalenosti>Mil</jednotky_vzdalenosti>
+      <jednotky_rychlosti>Mil/h</jednotky_rychlosti>
+      <jednotky_teploty>F</jednotky_teploty>
+      <vychozi_pohled>kabina</vychozi_pohled>
+    </hra>
+    <grafika rozliseni="1600x900" mod="Okno">
+        <antistropni_filtr>1</antistropni_filtr>
+        <vyhlazovani_hran>1</vyhlazovani_hran>
+        <extra_AA>1</extra_AA>
+      <detaily kvalita_det="vysoka">
+        <kvalita_textur>vysoka</kvalita_textur>
+        <kvalita_stinu>stredni</kvalita_stinu>
+        <vykreslovaci_rozliseni>1</vykreslovaci_rozliseni>
+        <kvalita_mraku>1</kvalita_mraku>
+        <kvalita_terenu>1</kvalita_terenu>
+        <vzdalenost_vykreslovani>1.5</vzdalenost_vykreslovani>
+        <kvalita_odlesku>1.8</kvalita_odlesku>
+        <kvalita_odrazu_vody>1</kvalita_odrazu_vody>
+        <kvalita_fyziky>1.5</kvalita_fyziky>
+        <deformace_terenu>stredni</deformace_terenu>
+        <kvalita_stop_pasu>stredni</kvalita_stop_pasu>
+      </detaily>
+      <stiny>1</stiny>
+      <detaily_pobrezi>1</detaily_pobrezi>
+      <efekt_vlneni>1</efekt_vlneni>
+      <detaily_vegetace>1</detaily_vegetace>
+    </grafika>
+    <zvuk zapnuto="1" kvalita_zvuk="vysoka">
+      <hlasitost>10</hlasitost>
+      <hlasitost_efektu>10</hlasitost_efektu>
+      <hlasitost_motoru>9</hlasitost_motoru>
+      <hlasitost_strelby>9</hlasitost_strelby>
+      <hlasitost_komunikace>10</hlasitost_komunikace>
+      <zvuky_v_hangaru>1</zvuky_v_hangaru>
+    </zvuk>
+    <rozhrani>
+      <velke_pismo_menu>0</velke_pismo_menu>
+      <rozhrani_s_gamepadem>0</rozhrani_s_gamepadem>  
+      <barva_zamerneho_krize>modra</barva_zamerneho_krize>
+      <velikost_zamerneho_krize>0.8</velikost_zamerneho_krize>
+      <filtr_konverzace>1</filtr_konverzace>
+      <velikost_ukaz_poskozeni>0.7</velikost_ukaz_poskozeni>
+      <velikost_takticke_mapy>0.5</velikost_takticke_mapy>
+      <titulky>1</titulky>
+      <predsazeni>1</predsazeni>
+      <ukazatele_nepratel>1</ukazatele_nepratel>
+      <zobrazeni_poskozeni>1</zobrazeni_poskozeni>
+    </rozhrani>
+  </prednastaveni>
+  <prednastaveni id="set5">
+    <hra verze="1.67.2.115" uzivatelske_jmeno="Lotr666" autolog="1">
+      <jazyk>Czech</jazyk>
+      <napoveda>0</napoveda>
+      <jednotky_vzdalenosti>Km</jednotky_vzdalenosti>
+      <jednotky_rychlosti>Km/h</jednotky_rychlosti>
+      <jednotky_teploty>C</jednotky_teploty>
+      <vychozi_pohled>kabina</vychozi_pohled>
+    </hra>
+    <grafika rozliseni="1024x768" mod="Fullscreen">
+        <antistropni_filtr>1</antistropni_filtr>
+        <vyhlazovani_hran>0</vyhlazovani_hran>
+        <extra_AA>1</extra_AA>
+      <detaily kvalita_det="vysoka">
+        <kvalita_textur>stredni</kvalita_textur>
+        <kvalita_stinu>stredni</kvalita_stinu>
+        <vykreslovaci_rozliseni>1</vykreslovaci_rozliseni>
+        <kvalita_mraku>2</kvalita_mraku>
+        <kvalita_terenu>2</kvalita_terenu>
+        <vzdalenost_vykreslovani>1</vzdalenost_vykreslovani>
+        <kvalita_odlesku>1.3</kvalita_odlesku>
+        <kvalita_odrazu_vody>1</kvalita_odrazu_vody>
+        <kvalita_fyziky>2</kvalita_fyziky>
+        <deformace_terenu>stredni</deformace_terenu>
+        <kvalita_stop_pasu>vysoka</kvalita_stop_pasu>
+      </detaily>
+      <stiny>1</stiny>
+      <detaily_pobrezi>1</detaily_pobrezi>
+      <efekt_vlneni>1</efekt_vlneni>
+      <detaily_vegetace>1</detaily_vegetace>
+    </grafika>
+    <zvuk zapnuto="1" kvalita_zvuk="vysoka">
+      <hlasitost>10</hlasitost>
+      <hlasitost_efektu>10</hlasitost_efektu>
+      <hlasitost_motoru>10</hlasitost_motoru>
+      <hlasitost_strelby>10</hlasitost_strelby>
+      <hlasitost_komunikace>10</hlasitost_komunikace>
+      <zvuky_v_hangaru>1</zvuky_v_hangaru>
+    </zvuk>
+    <rozhrani>
+      <velke_pismo_menu>0</velke_pismo_menu>
+      <rozhrani_s_gamepadem>0</rozhrani_s_gamepadem>  
+      <barva_zamerneho_krize>bila</barva_zamerneho_krize>
+      <velikost_zamerneho_krize>0.5</velikost_zamerneho_krize>
+      <filtr_konverzace>1</filtr_konverzace>
+      <velikost_ukaz_poskozeni>0.5</velikost_ukaz_poskozeni>
+      <velikost_takticke_mapy>0.5</velikost_takticke_mapy>
+      <titulky>0</titulky>
+      <predsazeni>1</predsazeni>
+      <ukazatele_nepratel>1</ukazatele_nepratel>
+      <zobrazeni_poskozeni>1</zobrazeni_poskozeni>
+    </rozhrani>
+  </prednastaveni>
+</nastaveni>
